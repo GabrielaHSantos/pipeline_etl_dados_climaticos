@@ -1,4 +1,79 @@
-.env
-.venv/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+wheels/
+*.egg-info/
+
+# Ambientes Virtuais (Adicional)
+ENV/
+
+# Variáveis de ambiente e credenciais (CRÍTICO)
+.env.local
+.env.*.local
+config/.env
+config/*.env
+*.key
+*.pem
+credentials.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Airflow (Arquivos gerados localmente e logs)
+logs/
+airflow.db
+airflow.cfg
+webserver_config.py
+standalone_admin_password.txt
+
+# Docker
+.docker/
+docker-compose.override.yml
+.dockerignore
+postgres-db-volume/
+
+# Dados (Evitar subir arquivos pesados ou temporários de dados)
+data/*.json
+data/*.csv
+data/*.xlsx
+data/*.parquet
+data/temp/
+*.tmp
+# Mantenha os diretórios, mas ignore seu conteúdo padrão (exceção para .gitkeep se houver)
+data/*
+!data/.gitkeep
+config/*
+!config/.env.example
+
+# IDEs e Sistema
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Database (SQLite locais)
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+
+# UV / Dependências
+.uv/
+node_modules/
+
+# Backup files
+*.bak
+*.backup

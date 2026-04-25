@@ -1,0 +1,10 @@
+apache-airflow==2.9.0
+pandas
+requests
+python-dotenv
+sqlalchemy
+psycopg2-binary
+ipykernel
+pytest
+pytest-mock
+responses
